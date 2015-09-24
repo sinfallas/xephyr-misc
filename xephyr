@@ -1,0 +1,6 @@
+Xephyr -ac -screen 1280x1024 -br -reset -terminate 2> /dev/null :2 &
+safiro -ac -screen 1280x1024 -br -reset -terminate 2> /dev/null :2 &
+
+export DISPLAY=:2.0 
+
+ssh -p 2222 -XfC -c blowfish sinfallas@bug xfce4-session

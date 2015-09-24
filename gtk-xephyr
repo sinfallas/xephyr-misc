@@ -1,0 +1,56 @@
+#!/bin/bash
+echo ''
+echo 'Select screen resolution'
+echo '[1] 640x480'
+echo '[2] 800x600'
+echo '[3] 1024x768'
+echo '[4] USER SPECIFIED'
+echo '[5] EXIT'
+echo ''
+read resolution
+
+case $resolution in
+	1)
+	resolution='640x480'
+	;;
+
+	2)
+	resolution='800x600'
+	;;
+
+	3)
+	resolution='1024x768'
+	;;
+
+	4)
+	echo 'Please enter a screen resolution:'
+	read manualresolution
+	resolution=$manualresolution
+	;;
+
+	5)
+	exit
+	;;
+esac
+
+echo ''
+echo 'Display Number:'
+echo '(Please choose a number higher than 0)'
+read display
+
+echo ''
+echo 'Command:'
+echo '(Specify a command to be executed on the nested window)'
+read command
+
+echo ''
+echo 'Starting Xephyr with resolution of '$resolution
+echo 'on display number '$display
+Xephyr -ac -screen $resolution -br 2> /dev/null :$display&
+
+echo ''
+echo 'Switching to display number '$display
+export DISPLAY=:$display
+
+$command&
+exit 0
