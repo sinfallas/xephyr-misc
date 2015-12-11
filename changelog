@@ -1,4 +1,16 @@
-commit 782f6daab2d975ec9fdc6672f810cf9496b6c4eb (HEAD, origin/master, origin/HEAD, master)
+commit d37d1679dfd10c5ecbc53d468d0edeb02e92ea74 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Thu Dec 10 22:17:06 2015 -0430
+
+    bugfix
+
+commit 86b8c988ea59b4d434039857e11baea1f6c65724
+Author: jose perez <sinfallas@gmail.com>
+Date:   Thu Dec 10 21:19:03 2015 -0430
+
+    * changelog
+
+commit 782f6daab2d975ec9fdc6672f810cf9496b6c4eb
 Author: jose perez <sinfallas@gmail.com>
 Date:   Thu Dec 10 21:16:05 2015 -0430
 
