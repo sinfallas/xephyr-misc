@@ -1,4 +1,10 @@
-commit f4ef4aaa03e2e0a39c53770f0851af4cfbb2c344 (HEAD, origin/master, origin/HEAD, master)
+commit 909b1ed831ef86ef27c17b950ab1d680b2b623e9 (HEAD -> master, tag: v1.3, origin/master, origin/HEAD)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Wed Mar 23 17:57:37 2016 -0430
+
+    * changelog
+
+commit f4ef4aaa03e2e0a39c53770f0851af4cfbb2c344
 Author: jose perez <sinfallas@gmail.com>
 Date:   Wed Mar 23 17:57:15 2016 -0430
 
